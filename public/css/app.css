@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#search {
+  max-width: 800px;
+}
+
+.nav-icon {
+  width: 30px;
+  font-size: 1.3rem;
+}
+
+.auth-button {
+  min-width: 100px;
+}
+
+.hero-container {
+  min-height: 80vh;
+  width: 100vw;
+
+  background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1)), url('../images/home/hero/Jujutsu_kaisen.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+  /* background-color: linear-gradient(to left, rgba); */
+
+}
+
+.hero-img-container {
+
+  /* background-image: url('../images/home/hero/Jujutsu_kaisen.jpg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat; */
+  height: 50vh;
+  
+}
+.page {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: red;
+}
+
+
+.auth-page {
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+.auth-form {
+  min-height: 60vh;
+  width: 50vw;
+}
+
+.auth-form input {
+  min-height: 40px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  padding-left: 5px;
+}
+
+.mini-profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+footer {
+  width: 100vw;
+  min-height: 20vh;
+  border-width: 0;
+  border-top-width: 5px;
+}
+
+.genres-content {
+
+}
+.genres-slider {
+  position: relative;
+  gap:10px;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+}
+
+.genres-slider a {
+  flex: 0 0 33%;
+  transition: 0.5s;
+}
+.genre-block {
+  position: relative;
+  aspect-ratio: 13/6;
+  overflow: hidden; /* Hide overflow to prevent overlay from covering gaps */
+  width: 100%;
+  background-color: rgba(0,0,0,1);
+}
+
+.genre-block:hover {
+  background-size: 150%;
+}
+
+.genre-block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/genre_covers/Shounen.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.5s;
+  opacity: 0.5; /* Adjust the opacity for transparency */
+}
+
+.genre-block::before:hover {
+  background-size: 150%;
+}
+
+
+.slider-caret {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(255,255,255,0.7);
+  width: 30px;
+  height: 30px;
+  z-index: 999;
+  border-radius: 50%;
+}
+
+
+
+.left {
+  left:10px;
+}
+
+.right {
+  right:10px;
+
+}
+
+.profile-container {
+  width:clamp(300px, 70%, 1500px);
+  min-height: 200px;
+  border-radius: 16px;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: gainsboro;
+
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+
+}
+
+
+@media screen and (max-width: 1000px) {
+  .nav-utility {
+    position: absolute;
+    top:100px;
+    left:0;
+    min-height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    padding: 2rem;
+    font-size: 1.5rem;
+    gap:30px;
+    background-color: white;
+  }
+
+  .hero-container {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url('../images/home/hero/Jujutsu_kaisen.jpg');
+    
+  }
+
+  /* .hero-img-container {
+    height: 50vh;
+    background-color: rebeccapurple;
+  } */
+
+
+  .search-area {
+    width: 100%;
+    
+  }
+
+
+  .auth-form {
+    width: 70vw;
+  }
+
+
+
+
+  
+}
